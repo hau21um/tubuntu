@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -z "$1" ] ; then
+  echo Usage $0 DISPLAY_number
+  exit
+else
+  echo Sharing $1
+fi
+x11vnc -clip xinerama$1
