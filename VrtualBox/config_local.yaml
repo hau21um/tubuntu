@@ -1,0 +1,11 @@
+# Add to /var/cfengine/kaszanka/config_local.yaml
+# hausemil
+# wlan
+wlan: true
+# firewall
+virtualbox_hosonly_if:
+  firewall:
+    tcp_ports: 0:1023
+    udp_ports: 0:1023
+    interfaces: vboxnet0
+
